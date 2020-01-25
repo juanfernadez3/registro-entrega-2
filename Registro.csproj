@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ftbuscar.jpg" />
+    <None Remove="fteliminar.jpg" />
+    <None Remove="ftguardar.jpg" />
+    <None Remove="ftnuevo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UI\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ftbuscar.jpg" />
+    <Resource Include="fteliminar.jpg" />
+    <Resource Include="ftguardar.jpg" />
+    <Resource Include="ftnuevo.png" />
+  </ItemGroup>
+
+</Project>
